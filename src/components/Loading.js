@@ -20,8 +20,8 @@ export default class Loading extends Component {
   }
   render() {
     return (
-      <div className="container">
-        <p className="text-center">{this.state.text}</p>
+      <div className="loading-container">
+        <p>{this.state.text}</p>
       </div>
     );
   }

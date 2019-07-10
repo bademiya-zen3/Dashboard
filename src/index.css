@@ -1,8 +1,17 @@
-.chart-container {
-  /* background-color: aliceblue; */
-  position: absolute;
-  left: 30%;
-  top: 20%;
+*{
+    box-sizing: border-box;
+}
+.container{
+ 
+    width:100vw;
+    height: 100vh;
+    position:relative;
+}
+.chart-main{
+    background-color: aliceblue; 
+    position: absolute;
+    left: 30%;
+    top: 20%;
 }
 .options {
   position: absolute;
@@ -20,6 +29,11 @@
   width: 100px;
   height: 50px;
   outline: none;
+}
+span{
+    background-color: tomato;
+    padding:3px;
+    color:#fff;
 }
 .options #btn-fetch:after,
 #btn-bar:after,

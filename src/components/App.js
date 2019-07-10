@@ -30,12 +30,12 @@ class App extends Component{
     return (
     <div className='container'>
     <div className='options'>
-    <button  id='btn-fetch' onClick={this.fetchDataHandler}>Fetch Data</button>
+    <button  id='btn-fetch' onClick={this.fetchDataHandler}><span>Fetch Data</span></button>
     <button id='btn-bar' onClick={()=>this.setChartType('bar')}>Bar</button>
     <button id='btn-pie'  onClick={()=>this.setChartType('pie')}>Pie</button>
     </div>
-    <div className='chart-container'>
-      {this.props.isFetching ? <Loading /> : <Chart data={this.props.data} chartType={this.state.chartType}/>}
+    <div className='chart-main'>
+      {this.props.isFetching ? <Loading /> : <div className='chart-container'><Chart data={this.props.data} chartType={this.state.chartType}/></div>}
     </div>
     </div>
     )

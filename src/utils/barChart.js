@@ -64,7 +64,7 @@ export default function renderChart({ legend, series }) {
       verticalAlign: app.config.verticalAlign,
       rotate: app.config.rotate,
       formatter: "{c}  {name|{a}}",
-      fontSize: 12,
+      fontSize: 10,
       rich: {
         name: {
           textBorderColor: "#fff"
