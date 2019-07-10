@@ -1,34 +1,28 @@
-import React, { Component } from 'react'
-
+import React, { Component } from "react";
 
 export default class Loading extends Component {
-
   static defaultProps = {
-    text: 'Loading',
-  }
+    text: "Loading"
+  };
   state = {
     text: this.props.text
-  }
-  componentDidMount () {
-    console.log("loading mounted")
-    const stopper = this.props.text + '...'
+  };
+  componentDidMount() {
+    const stopper = this.props.text + "...";
     this.interval = setInterval(() => {
       this.state.text === stopper
         ? this.setState(() => ({ text: this.props.text }))
-        : this.setState(({ text }) => ({ text: text + '.' }))
-    }, 300)
+        : this.setState(({ text }) => ({ text: text + "." }));
+    }, 300);
   }
-  componentWillUnmount () {
-    window.clearInterval(this.interval)
+  componentWillUnmount() {
+    window.clearInterval(this.interval);
   }
-  render () {
-    console.log("rendering loading")
+  render() {
     return (
-      <div className='container'>
-        <p className='text-center'>
-          {this.state.text}
-        </p>
+      <div className="container">
+        <p className="text-center">{this.state.text}</p>
       </div>
-    )
+    );
   }
 }
