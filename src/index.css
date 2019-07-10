@@ -7,6 +7,11 @@
     height: 100vh;
     position:relative;
 }
+#chart-container{
+    position: relative;
+     width: 1000px;
+      height: 500px;
+}
 .chart-main{
     background-color: aliceblue; 
     position: absolute;
@@ -22,7 +27,8 @@
 }
 .options #btn-fetch,
 #btn-bar,
-#btn-pie {
+#btn-pie,
+#btn-guage{
   background-color: aliceblue;
   display: block;
   border: 0;

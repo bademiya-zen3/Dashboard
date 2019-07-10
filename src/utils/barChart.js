@@ -1,6 +1,6 @@
 import echarts from "echarts";
 export default function renderChart({ legend, series }) {
-  var dom = document.getElementById("chartArea");
+  var dom = document.getElementById("chart-container");
   var myChart = echarts.init(dom);
   var app = {};
   var option = null;

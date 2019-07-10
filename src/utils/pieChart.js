@@ -1,6 +1,6 @@
 import echarts from "echarts";
 export default () => {
-  var dom = document.getElementById("chartArea");
+  var dom = document.getElementById("chart-container");
   var myChart = echarts.init(dom);
   var app = {};
   let option = null;

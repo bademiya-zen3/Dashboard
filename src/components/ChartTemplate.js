@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import renderBarChart from "../utils/barChart";
 import renderPieChart from "../utils/pieChart";
+//import ReactEcharts from 'echarts-for-react';
+//import {option} from '../utils/guageChartOption';
 
 class Chart extends Component {
   constructor(props) {
@@ -20,13 +22,13 @@ class Chart extends Component {
       renderBarChart(this.props.data);
     }
   }
+  // getOption(){
+  //   return option;
+  // }
   render() {
+   
     return (
       <>
-        <div
-          id="chartArea"
-          style={{ position: "relative", width: "1000px", height: "500px" }}
-        />
       </>
     );
   }
