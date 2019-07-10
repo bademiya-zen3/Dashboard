@@ -1,7 +1,7 @@
 import echarts from 'echarts';
 export default function renderChart({legend,series})
 {
- var dom = document.getElementById("barChart");
+ var dom = document.getElementById("chartArea");
 var myChart = echarts.init(dom);
 var app = {};
 var option = null;
@@ -138,7 +138,6 @@ option = {
     series: formattedSeries
 };;
 if (option && typeof option === "object") {
-    console.log("second set option")
     myChart.setOption(option, true);
   
 }

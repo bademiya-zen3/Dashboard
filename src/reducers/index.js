@@ -1,14 +1,15 @@
 import data from '../utils/data';
 import {combineReducers} from 'redux';
 
-const barChartData =(state=null,action) => {
+const barChartData =(state={data:null,isFetching:false},action) => {
     console.log(action);
     switch(action.type){
         case 'FETCH_DATA':
             let payload = action.payload;
-            return  {...state,...payload};
-        case 'LOADING':
-             return {isLoading:true};    
+            let data=  {...state,...payload};
+            return  {data,isFetching:false};
+        case 'FETCHING':
+             return {isFetching:true};    
         default:
               return state;
     }

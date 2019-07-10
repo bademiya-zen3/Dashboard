@@ -1,0 +1,28 @@
+
+.chart-container{
+    /* background-color: aliceblue; */
+    position:absolute;
+    left:30%;
+    top:20%;
+}
+.options{
+    position: absolute;
+    left:10%;
+    top:20%;
+    height: 200px;;
+    background-color: aliceblue
+
+}
+.options #btn-fetch,#btn-bar,#btn-pie{
+    background-color:aliceblue;
+    display:block;
+    border:0;
+    width:100px;
+    height: 50px;
+    outline:none;
+}
+.options #btn-fetch:after,#btn-bar:after,#btn-pie:after{
+    display:block;
+    content:"__________";
+
+}
